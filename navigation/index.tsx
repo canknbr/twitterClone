@@ -24,6 +24,7 @@ import useColorScheme from '../hooks/useColorScheme';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import HomeScreen from '../screens/HomeScreen';
+import NewTweetScreen from '../screens/NewTweetScreen';
 import SearchScreen from '../screens/SearchScreen';
 import NotificationsScreen from '../screens/NotificationsScreen';
 import MessagesScreen from '../screens/MessagesScreen';
@@ -69,6 +70,13 @@ function RootNavigator() {
         name="NotFound"
         component={NotFoundScreen}
         options={{ title: 'Oops!' }}
+      />
+      <Stack.Screen
+        name="New Tweet"
+        component={NewTweetScreen}
+        options={{
+          headerShown: false,
+        }}
       />
     </Stack.Navigator>
   );
