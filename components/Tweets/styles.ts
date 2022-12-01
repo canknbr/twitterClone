@@ -3,11 +3,11 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderTopColor: 'lightgrey',
+    borderTopColor: '#f1f3f5',
     borderTopWidth: 0.5,
-    borderBottomColor: 'lightgrey',
+    borderBottomColor: '#f1f3f5',
     borderBottomWidth: 0.5,
-    padding: 10,
+    padding: 15,
   },
   image: {
     width: 50,
@@ -30,18 +30,19 @@ const styles = StyleSheet.create({
   name: {
     marginRight: 5,
     fontWeight: 'bold',
-    color: 'black',
+    color: '#343a40',
   },
   username: {
     marginRight: 5,
-    color: 'grey',
+    color: '#adb5bd',
   },
   createdAt: {
-    color: 'grey',
+    color: '#adb5bd',
   },
   content: {
     lineHeight: 18,
-    color: 'black',
+    fontSize: 16,
+    color: '#495057',
   },
   tweetImage: {
     width: '100%',
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   number: {
-    color: 'grey',
+    color: '#adb5bd',
     marginLeft: 5,
     alignSelf: 'flex-end',
   },
