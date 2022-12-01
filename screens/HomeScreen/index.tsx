@@ -1,7 +1,7 @@
-import { View, FlatList } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import Tweets from '../../components/Tweets';
-import tweets from '../../assets/data/tweets';
+
+import Feeds from '../../components/Feeds';
 const HomeScreen = () => {
   return (
     <View
@@ -10,12 +10,8 @@ const HomeScreen = () => {
         flex: 1,
       }}
     >
-      <FlatList
-        data={tweets}
-        renderItem={({ item }) => <Tweets tweet={item} />}
-        keyExtractor={item => item.id}
-        showsVerticalScrollIndicator={false}
-      />
+      <Feeds />
+      
     </View>
   );
 };
